@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    
+      
+    <h1>vdsbhnm bdhnbn</h1>
+
+
+    <div class="login">
+        <h1>Boston House Price Prediction</h1>
+    
+         <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}"method="post">
+          <input type="text" name="IP_Mean" placeholder="IP_Mean" required="required" /><br>
+            <input type="text" name="IP_Sd" placeholder="IP_Sd" required="required" /><br>
+            <input type="text" name="IP_Kurtosis" placeholder="IP_Kurtosis" required="required" /><br>
+            <input type="text" name="IP_Skewness" placeholder="IP_Skewness" required="required" /><br>
+            <input type="text" name="DM-SNR_Mean" placeholder="DM-SNR_Mean" required="required" /><br>
+            <input type="text" name="DM-SNR_Sd" placeholder="DM-SNR_Sd" required="required" /><br>
+            <input type="text" name="DM-SNR_Kurtosis" placeholder="DM-SNR_Kurtosis" required="required" /><br>
+            <input type="text" name="DM-SNR_Skewness" placeholder="DM-SNR_Skewness" required="required" /><br>
+         
+    
+           
+    
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+    
+       <br>
+       <br>
+      
+       
+     </div>
+     {{prediction_text}}
+</body>
+</html>
+
